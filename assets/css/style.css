@@ -1,0 +1,162 @@
+/**
+ * -------------------------------------
+ * @author : Budiliauw87
+ * @date   : 27-06-2018
+ * -------------------------------------
+ * Based css framework materialize
+ * @url    : https://materializecss.com/
+ * 
+ */
+/*******************
+Paddings
+*******************/
+html body .p-0 {
+  padding: 0px; }
+
+html body .p-10 {
+  padding: 10px; }
+
+html body .p-20 {
+  padding: 20px; }
+
+html body .p-30 {
+  padding: 30px; }
+
+html body .p-l-0 {
+  padding-left: 0px; }
+
+html body .p-l-10 {
+  padding-left: 10px; }
+
+html body .p-l-20 {
+  padding-left: 20px; }
+
+html body .p-r-0 {
+  padding-right: 0px; }
+
+html body .p-r-10 {
+  padding-right: 10px; }
+
+html body .p-r-20 {
+  padding-right: 20px; }
+
+html body .p-r-30 {
+  padding-right: 30px; }
+
+html body .p-r-40 {
+  padding-right: 40px; }
+
+html body .p-t-0 {
+  padding-top: 0px; }
+
+html body .p-t-10 {
+  padding-top: 10px; }
+
+html body .p-t-20 {
+  padding-top: 20px; }
+
+html body .p-t-30 {
+  padding-top: 30px; }
+
+html body .p-b-0 {
+  padding-bottom: 0px; }
+
+html body .p-b-5 {
+  padding-bottom: 5px; }
+
+html body .p-b-10 {
+  padding-bottom: 10px; }
+
+html body .p-b-20 {
+  padding-bottom: 20px; }
+
+html body .p-b-30 {
+  padding-bottom: 30px; }
+
+html body .p-b-40 {
+  padding-bottom: 40px; }
+
+
+body {
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+
+#main {
+ flex: 1 0 auto;
+}
+
+.sec-slider{
+  background: #0D47A1;
+  height: 300px;
+}
+
+#content{
+  margin-top:10px;
+}
+.slider .indicators .indicator-item {
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: blue;
+}
+.slider .btn {
+    margin-top: 20px;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.slider .indicators {
+  bottom: 60px;
+  font-size: 30px;
+  z-index: 100;
+  /* text-align: left; */
+}
+.box {
+  background: #ffffff;
+  padding: 10px;
+}
+
+/**
+ * sidemenu button
+ */
+.contact-icon{
+  margin:0 5px 20px 29px
+}
+/**
+ * widget news
+ */
+.card-news{
+  padding:5px !important;
+}
+.news{
+  margin: .5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .card-title {
+  margin-top: -5px;
+}
+
+.btn-round{
+  border-radius: 20px;
+}
+
+.login-button .btn{
+  width: 100%;
+  
+}
+
+@media (max-width: 480px) {
+	
+}
