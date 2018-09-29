@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -38,24 +39,55 @@
     <!-- End Page Loading -->
     <!--navbar start-->
     <div class="navbar-fixed">
-        <nav class="transparent z-depth-0">
+        <nav id="navbar-header" class="z-depth-0 transparent">
             <div class="nav-wrapper">
                 <div class="header-navbar">
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <a href="#!" class="brand-logo">Company</a>
                     <ul class="right">
-                        <li class="waves-effect hide-on-med-and-down active"><a href="index.html">Home</a></li>
-                        <li class="waves-effect hide-on-med-and-down"><a href="konten.html">Content</a></li>
-                        <li class="waves-effect hide-on-med-and-down"><a href="#">Top Up</a></li>
-                        <li class="waves-effect hide-on-med-and-down"><a href="#">User Manual</a></li>
-                        <li class="waves-effect hide-on-med-and-down"><a href="#">Partner</a></li>
-                        <li class="waves-effect hide-on-med-and-down"><a href="#">Contact</a></li>
+                        <li class="hide-on-med-and-down active"><a href="index.html">Home</a></li>
+                        <li class="hide-on-med-and-down"><a href="konten.html">Content</a></li>
+                        <li class="hide-on-med-and-down"><a href="topup.html">Top Up</a></li>
+                        <li class="hide-on-med-and-down"><a href="manual">User Manual</a></li>
+                        <li class="hide-on-med-and-down"><a href="partner.html">Partner</a></li>
+                        <li class="hide-on-med-and-down"><a href="contact.html">Contact</a></li>
+                        <li class="hide-on-med-and-down" style="margin-right: 10px;">
+                            <a class="dropdown-trigger" href="#!" data-target="dropdown-account">
+                            Account<i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
     <!--end navbar-->
+    
+    <!--dropdown account-->
+    <ul id="dropdown-account" class="dropdown-content">
+        <li>
+            <img src="assets/images/profile.jpg" class="circle">
+            <div class="profile-dropdown">
+                <h5 class="title">userdemo1</h5>
+                <span>example@demo.com</span>
+            </div>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">account_box</i> Edit Profile!</a>
+        </li>
+        <li class="divider"></li>
+        <li><a href="#!"><i class="material-icons">account_balance_wallet</i> IDR 50.000</a></li>
+        <li class="divider"></li>
+        <li><a href="#!"><i class="material-icons">lock</i> Logout</a></li>
+    </ul>
+    <ul id="dropdown-account1" class="dropdown-content">
+        <li>
+            <a href="login.html"><i class="material-icons">lock_open</i> Login</a>
+        </li>
+        <li class="divider"></li>
+        <li><a href="register.html"><i class="material-icons">lock_op</i> Register</a></li>
+        <li class="divider"></li>
+    </ul>
     <!--sidemenu mobile-->
     <ul class="sidenav" id="mobile-demo">
         <li>
@@ -104,87 +136,91 @@
         </li>
         <li><a class="subheader"></a></li>
     </ul>
+
     <div class="ribbon" style="background-image: url(&quot;assets/images/dota-bg.jpg&quot;); transform: translate3d(0px, 133.333px, 0px);">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="brand">
-                        <h1 class="title">Login Page</h1>
+                        <h1 class="title">Content</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- START MAIN -->
-    <div id="main">
+    <div id="main" class="main-card">
         <!-- START WRAPPER -->
         <div class="wrapper">
-            <div class="row">
-                <div class="col s12 m8 offset-m2 l6 offset-l3">
-                    <div class="card-panel login-form z-depth-3">
-                        <form id="formlogin" >
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="inputusername" type="text" name="username" class="validate" required="">
-                                    <label for="inputusername">Username </label>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">lock_outline</i>
-                                    <input id="inputpassword" type="password" name="password" class="validate" required="">
-                                    <label for="inputpassword">Username </label>
-                                </div>
-                                 <div class="input-field col s12">
-                                    <label>
-                                        <input type="checkbox" class="filled-in">
-                                        <span>Remember Me</span>
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <button type="submit" class="btn waves-effect waves-light btn-medium red col s12">Login</button>
-                                    <div class="row"></div>
-                                    <a href="register.html" class="btn waves-effect waves-light btn-medium blue darken-4 col s12 p-t-10">Register</a>
-                                </div>
-
-                                <div class="center">
-                                     <p>Forget Password ? <a href="javascript:void(0);" id="toReset">Reset</a></p>
-                                </div>
-                            </div>
-                        </form>
-                        <form id="formreset" class="hide">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="inputemail" type="email" name="email" class="validate" required="">
-                                    <label for="inputemail">Email </label>
-                                </div>
-                                <div class="input-field col s12">
-                                    <button type="submit" class="btn waves-effect waves-light btn-medium red col s12">Reset</button>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="center">
-                                     <p>Back to  ? <a href="javascript:void(0)" id="toLogin">Login</a></p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!--end card-->
-                   
-                </div>
-            </div>
+           
         </div>
         <!--/END WRAPPER -->
+
+        <!--widget chat-->
+        <div class="chat-wrapper z-depth-3 hide">
+            <div class="chat_header">
+                <div class="chat_option">
+                    <div class="header_img">
+                        <img src="assets/images/profile2.jpg" />
+                    </div>
+                    <span id="chat_head">Jane Doe</span>
+                    <br> <span class="agent">Agent</span> <span class="online">(Online)</span>
+                    <span id="btnminize" class="btnminize"><i class="material-icons">close</i></span>
+                </div>
+            </div>
+            <!--end chat header-->
+            <div class="chat_body">
+                <div class="form-chat hide">
+                    <p>Wellcome to my site,
+                        <br>need help or any question, i am very glad can service :) </p>
+                    <form id="chatform" class="chatform">
+                        <div class="input-field col s12">
+                            <input id="username" type="text" name="usernamechat" class="validate">
+                            <label for="username">Your name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="emailchatform" type="email" name="emailchat" class="validate">
+                            <label for="emailchatform">Your email</label>
+                        </div>
+                        <button type="submit" class="btn-round btn-small col s12">Chat now</button>
+                    </form>
+                </div>
+                <div id="chat-history" class="chat-history">
+                    <ul>
+                         <li>
+                            <div class="message-data">
+                              <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                              <span class="message-data-time">10:12 AM, Today</span>
+                            </div>
+                            <div class="message my-message">
+                              Are we meeting today? Project has been already finished and I have results to show you.
+                              <img src="assets/images/dota-bg.jpg" class="materialboxed">
+                            </div>
+                          </li>
+                      <li class="clearfix">
+                        <div class="message-data right-align">
+                          <span class="message-data-time" >10:10 AM, Today</span> &nbsp; &nbsp;
+                          <span class="message-data-name" >Olia</span> <i class="fa fa-circle"></i>
+                          
+                        </div>
+                        <div class="message other-message right">
+                          Hi Vincent, how are you? How is the project coming along?
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <!--end chat body-->
+            <!--field text chat-->
+            <div class="fab_field">
+                <a id="fab_camera" class="fab"><i class="material-icons">camera</i></a>
+                <a id="fab_send" class="fab"><i class="material-icons">send</i></a>
+                <textarea id="chatSend" name="chat_message" placeholder="Send a message" class="chat_field chat_message"></textarea>
+            </div><!--end text chat-->
+        </div><!--end widget chat-->
         <!--floating button chat-->
-        <div class="fixed-action-btn">
-            <a class="waves-effect btn red z-depth-3 btn-round">
+        <div class="fixed-action-btn ">
+            <a href="javascript:void(0);" id="chatbtn" class="waves-effect btn red z-depth-3 btn-round">
                Chat now <i class="fa fa-inbox"></i>
               </a>
         </div>
@@ -209,22 +245,6 @@
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
     <!-- App Js -->
     <script type="text/javascript" src="assets/js/init.js"></script>
-    <script type="text/javascript">
-        
-        $('#toReset').on('click',function(){
-            $('#formreset').removeClass('hide');
-            $('#formlogin').slideUp(300);
-
-        });
-        $('#toLogin').on('click',function(){
-            $('#formreset').addClass('hide');
-            $('#formlogin').slideDown(300);
-            
-        });
-
-        //validate form
-        
-    </script>
 </body>
 
 </html>
